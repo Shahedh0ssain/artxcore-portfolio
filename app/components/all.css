@@ -1,0 +1,20 @@
+.half-circle {
+  position: relative;
+  width: 500px;
+  /* Set the desired width */
+  height: 250px;
+  /* Half of the desired width to maintain the aspect ratio */
+  border: 2px solid #3498db;
+  /* Change the border color as desired */
+  border-radius: 250px 250px 0 0;
+  overflow: hidden;
+}
+
+.img-test {
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
