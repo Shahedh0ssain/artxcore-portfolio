@@ -5,8 +5,8 @@ import Image from "next/image";
 
 
 
-const SingleIcon = ({ name,icon }) => {
-    console.log(name)
+const SingleIcon = ({ name, icon }) => {
+    // console.log(name)
     return (
 
         <div className="w-full flex flex-col justify-between p-3 group h-[200px] md:h-[200px] lg:h-[218px] md:w-boxWidth   transition-all  ease-in-out border border-gary-500 flex-shrink-0 hover:bg-[#EBEBEB]">
