@@ -29,7 +29,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={ibm.className}>
+      <body className={`${ibm.className}`}>
         <Navber></Navber>
         {children}
         <Footer></Footer>

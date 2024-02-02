@@ -8,7 +8,7 @@ const BlogsSection = () => {
 
 
     return (
-        <section id="blogs" className=" md:h-screen flex flex-col justify-center py-10 ">
+        <section id="blogs" className=" flex flex-col justify-center py-10 ">
             <div className='grid grid-cols-1 md:grid-cols-4 gap-5 content-center'>
                 <Blog img='/blog-1.png'></Blog>
                 <Blog img='/blog-2.png'></Blog>

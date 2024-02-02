@@ -12,10 +12,10 @@ const Hero = () => {
 
 
     return (
-        <section className="md:h-screen">
+        <section className="">
 
 
-            <div className="md:flex ">
+            <div className="py-14 md:flex  ">
 
                 <div className="w-full md:w-2/4 lg:w-2/5 flex flex-col justify-between ">
 

@@ -9,7 +9,7 @@ import BlogsSection from "./components/blogsSection"
 
 const Home = () => {
   return (
-    <main className="max-w-screen-2xl  mx-auto px-2  md:px-5 lg:px-5 relative">
+    <main className="max-w-screen-2xl  mx-auto px-2  md:px-10 lg:px-10  relative">
       <Hero></Hero>
       <RecomandSection></RecomandSection>
       {/* <IconSection></IconSection> */}
