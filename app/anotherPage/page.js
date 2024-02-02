@@ -1,5 +1,5 @@
 
-import Hero from "../components/Hero";
+import Hero from "../components/hero";
 import OverView from "../components/AnotherPage/overView";
 import Benefits from "../components/AnotherPage/benefits";
 import Awards from "../components/AnotherPage/awards";
