@@ -48,7 +48,7 @@ const Navber = () => {
             document.removeEventListener("click", handleOutsideClick);
         };
     }, []);
-
+    
 
     const handleItemClick = (item) => {
         setOpenItem((prevOpenItem) => (prevOpenItem === item ? null : item));
@@ -151,7 +151,7 @@ const Navber = () => {
                     </div>
 
                 </div>
-                <SubManu navbarRef={navbarRef} items={items} openItem={openItem}></SubManu>
+                <SubManu items={items} openItem={openItem}></SubManu>
 
             </div>
 
