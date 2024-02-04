@@ -14,7 +14,26 @@ const Navber = () => {
     const [openItem, setOpenItem] = useState(null);
     const [selectedSubmenu, setSelectedSubmenu] = useState(null);
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+    const navbarRef = useRef(null);
 
+
+
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+            console.log('Clicked outside the navbar');
+            if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+                console.log('Inside if condition');
+                setOpenItem(null);
+                setIsDrawerOpen(false);
+            }
+        };
+
+        document.addEventListener('click', handleOutsideClick);
+
+        return () => {
+            document.removeEventListener('click', handleOutsideClick);
+        };
+    }, []);
 
     // useEffect(() => {
 
@@ -30,25 +49,25 @@ const Navber = () => {
     //     };
     // }, [openItem]);
 
-    const navbarRef = useRef(null);
+    // const navbarRef = useRef(null);
 
-    useEffect(() => {
-        const handleOutsideClick = (event) => {
-            if (navbarRef.current && !navbarRef.current.contains(event.target)) {
-                // Clicked outside the navbar, close it
-                setIsDrawerOpen(false);
-                setOpenItem(null);
-                setSelectedSubmenu(null);
-            }
-        };
+    // useEffect(() => {
+    //     const handleOutsideClick = (event) => {
+    //         if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+    //             // Clicked outside the navbar, close it
+    //             setIsDrawerOpen(false);
+    //             setOpenItem(null);
+    //             setSelectedSubmenu(null);
+    //         }
+    //     };
 
-        document.addEventListener("click", handleOutsideClick);
+    //     document.addEventListener("click", handleOutsideClick);
 
-        return () => {
-            document.removeEventListener("click", handleOutsideClick);
-        };
-    }, []);
-    
+    //     return () => {
+    //         document.removeEventListener("click", handleOutsideClick);
+    //     };
+    // }, []);
+
 
     const handleItemClick = (item) => {
         setOpenItem((prevOpenItem) => (prevOpenItem === item ? null : item));
@@ -64,8 +83,8 @@ const Navber = () => {
 
 
     return (
-        <header ref={navbarRef} className={`sticky top-0 right-0 left-0 z-50 ${openItem ? 'overlay' : ''}`}>
-            <div className={` bg-white   border-b`}>
+        <header  className={`sticky top-0 right-0 left-0 z-50 ${openItem ? 'overlay' : ''}`}>
+            <div ref={navbarRef} className={` bg-white   border-b`}>
                 <div className={` max-w-screen-2xl mx-auto px-2  md:px-10 lg:px-10 navbar p-0 min-h-3 `}>
 
 

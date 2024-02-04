@@ -42,8 +42,6 @@ const OverView = () => {
                 </div>
 
 
-
-
                 <div className="w-full  px-2 py-10  md:m-6  md:w-3/12 lg:w-3/12 md:py-10 md:flex  md:justify-end ">
                     <div className="md:flex">
 
@@ -88,7 +86,7 @@ const OverView = () => {
             </div>
 
             {/* part two */}
-            <div className="md:flex md:justify-between md:items-center border-y-2 py-5 md:py-14 ">
+            {/* <div className="md:flex md:justify-between md:items-center border-y-2 py-5 md:py-14 ">
                 <div className="w-full md:w-7/12 lg:w-7/12">
                     <p className=" text-2xl">
                         IBM has partnered with Noname Security to <br /> deliver advanced API security capabilities.
@@ -98,10 +96,10 @@ const OverView = () => {
                  ">
                     <p>Noname Security</p>
                 </div>
-            </div>
+            </div> */}
 
             {/* part three */}
-            <div className="flex flex-col border-b-2 py-5 md:py-14 ">
+            {/* <div className="flex flex-col border-b-2 py-5 md:py-14 ">
                 <div className="py-10">
                     <p className=" text-3xl md:inline-block md:text-5xl font-light">
                         See how IBM API Connect <br /> has helped businesses                    </p>
@@ -129,7 +127,7 @@ const OverView = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </section>
     )

@@ -13,3 +13,47 @@
     overflow: hidden;
 
 }
+
+.relativesss {
+    position: relative;
+}
+
+.topP {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+}
+
+
+.sidenav-item {
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidenav-item.active {
+    background-color: green;
+    /* Set your desired active color */
+    color: white;
+    /* Set text color for better visibility */
+}
+
+
+
+.slow-close-menu {
+    transition: height 0.5s ease, opacity 0.5s ease;
+    /* Adjust the duration and easing function as needed */
+}
+
+.menu-container {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.menu-container.open {
+    opacity: 1;
+    visibility: visible;
+}

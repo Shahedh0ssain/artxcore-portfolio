@@ -1,6 +1,9 @@
+'use client'
+
+
 import React, { useEffect, useState } from 'react';
 
-const ScrollSpySidebar = () => {
+const ScrollSidebar = () => {
     const [activeStep, setActiveStep] = useState(null);
 
     useEffect(() => {
@@ -43,5 +46,7 @@ const ScrollSpySidebar = () => {
         </ul>
     );
 };
+
+export default ScrollSidebar;
 
 
