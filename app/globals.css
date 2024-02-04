@@ -57,3 +57,20 @@
     opacity: 1;
     visibility: visible;
 }
+
+
+.submenu-open {
+    opacity: 1;
+    transition: opacity 10s ease-in-out;
+    background-color: rebeccapurple;
+    /* Add any other transition properties you need */
+}
+
+.submenu-close {
+    opacity: 0;
+    pointer-events: none;
+    /* Disable pointer events during the transition */
+    transition: opacity 0.5s ease-in-out;
+    /* Add any other transition properties you need */
+    background-color: aqua;
+}

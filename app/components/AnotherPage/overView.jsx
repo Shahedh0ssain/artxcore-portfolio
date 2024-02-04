@@ -8,7 +8,7 @@ const OverView = () => {
             {/* part one */}
             <div className="md:flex md:justify-between ">
 
-                <div className="w-full md:w-7/12 lg:w-7/12 flex flex-col justify-between ">
+                <div className="w-full md:w-7/12 lg:w-7/12 ">
 
 
                     <div className="">
@@ -42,7 +42,7 @@ const OverView = () => {
                 </div>
 
 
-                <div className="w-full  px-2 py-10  md:m-6  md:w-3/12 lg:w-3/12 md:py-10 md:flex  md:justify-end ">
+                {/* <div className="w-full  px-2 py-10  md:m-6  md:w-3/12 lg:w-3/12 md:py-10 md:flex  md:justify-end ">
                     <div className="md:flex">
 
                         <div className="flex flex-col justify-around">
@@ -79,7 +79,7 @@ const OverView = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
 
 

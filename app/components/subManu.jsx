@@ -6,6 +6,8 @@ const SubManu = ({ items, openItem }) => {
 
     const [activeSubmenuItem, setActiveSubmenuItem] = useState(null);
     const [submenuData, setSubmenuData] = useState([]); // New state to hold submenu data
+    const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+
 
     useEffect(() => {
         if (openItem) {
@@ -28,8 +30,8 @@ const SubManu = ({ items, openItem }) => {
     return (
         <>
             {openItem && (
-                <div className='w-full  md:h-[400px] lg:h-[400px]  bg-white drop-shadow-md slow-close-menu'>
-                    <div className={`slow-close-menu max-w-screen-2xl mx-auto px-2  md:px-10 lg:px-10 h-full   flex absolute top-0 left-0 right-0 `}>
+                <div className='w-full  md:h-[400px] lg:h-[400px]  bg-white drop-shadow-md slow-close-menu  '>
+                    <div className={` max-w-screen-2xl mx-auto px-2  md:px-10 lg:px-10 h-full   flex absolute top-0 left-0 right-0 transition ease-in-out delay-150 duration-1000 ${openItem ? ' transition ease-in-out delay-150 ' : 'submenu-close'} `}>
                         <div className="w-1/4 h-full  border-e">
                             <ul className=" menu   pb-5 ">
                                 {items.find((menuItem) => menuItem.label === openItem)?.submenu?.map((submenuItem, index) => (

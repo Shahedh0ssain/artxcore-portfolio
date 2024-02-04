@@ -8,6 +8,7 @@ import Banks from "../components/AnotherPage/banks";
 import Sidenav from "../components/AnotherPage/sideNav";
 import { useEffect, useState } from "react";
 
+
 const anotherPage = () => {
 
     const [activeSection, setActiveSection] = useState('overview');
@@ -51,23 +52,26 @@ const anotherPage = () => {
 
 
     return (
-        <section className="max-w-screen-2xl  mx-auto px-2  md:px-10 lg:px-10  relative">
+        <>
+            {/* <Navber></Navber> */}
+            <section className="max-w-screen-2xl  mx-auto px-2  md:px-10 lg:px-10  ">
 
-            <Hero></Hero>
-            <div className="relativesss relative">
-                <div className="flex">
-                    <div className="w-2/12 ">
-                        <Sidenav activeSection={activeSection} onNavItemClick={handleNavItemClick} />
-                    </div>
-                    <div className="w-10/12">
-                        <div id="overview" className="section"><OverView /></div>
-                        <div id="benefits" className="section"><Benefits /></div>
-                        <div id="awards" className="section"><Awards /></div>
-                        <div id="banks" className="section"><Banks /></div>
+                <Hero></Hero>
+                <div className="relativesss relative">
+                    <div className="md:flex">
+                        <div className="w-2/12 md:mt-20">
+                            <Sidenav activeSection={activeSection} onNavItemClick={handleNavItemClick} />
+                        </div>
+                        <div className="w-10/12">
+                            <div id="overview" className="section"><OverView /></div>
+                            <div id="benefits" className="section"><Benefits /></div>
+                            <div id="awards" className="section"><Awards /></div>
+                            <div id="banks" className="section"><Banks /></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     )
 
 

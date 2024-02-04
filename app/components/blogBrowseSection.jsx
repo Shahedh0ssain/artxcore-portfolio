@@ -13,15 +13,17 @@ const BlogBrowseSection = () => {
 
                 <div className="md:hero md:flex  md:items-start md:py-5  ">
 
-                    <div className="w-full   md:w-3/5 lg:w-w-3/5 flex justify-end ">
+                    <div className="w-full   md:w-3/5 lg:w-w-3/5  ">
                         <div className="flex">
                             <Image
                                 width={500}
                                 height={500}
                                 src="/blog.png"
                                 alt="/Movie-player"
-                                className="w-full me-5" />
-                            {/* w-[300px] h-[300px] */}
+                                className=" w-full h-auto md:w-[500px] md:h-[300px] lg:w-[700px] lg:h-[400px] "
+
+                            // className="w-full h-auto md:w-[600px] md:h-[500px]"
+                            />
                         </div>
                     </div>
 

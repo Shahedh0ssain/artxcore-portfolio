@@ -8,7 +8,7 @@ const Benefits = () => {
                     <p className=" text-3xl md:inline-block md:text-5xl font-light">
                         IBM API Connect stands <br /> out as an API management <br /> provider                    </p>
                 </div>
-                <div className="grid grid-cols-3 py-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 py-10">
                     <Benefit></Benefit>
                     <Benefit></Benefit>
                     <Benefit></Benefit>
