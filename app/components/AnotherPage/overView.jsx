@@ -6,9 +6,9 @@ const OverView = () => {
         <section className="px-2 py-14">
 
             {/* part one */}
-            <div className="md:flex md:justify-between ">
+            <div className=" ">
 
-                <div className="w-full md:w-7/12 lg:w-7/12 ">
+                <div className="w-full ">
 
 
                     <div className="">
@@ -23,9 +23,9 @@ const OverView = () => {
                         standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
                     </p>
 
-                    <div className="">
-
-                        <div className="md:flex md:px-3 my-5 ">
+                    <div className="w-full">
+                        {/* md:flex md:px-3 my-5 */}
+                        <div className=" ">
 
                             <Image
                                 width={600}

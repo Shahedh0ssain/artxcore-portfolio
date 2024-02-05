@@ -59,10 +59,10 @@ const anotherPage = () => {
                 <Hero></Hero>
                 <div className="relativesss relative">
                     <div className="md:flex">
-                        <div className="w-2/12 md:mt-20">
+                        <div className="md:w-2/12 md:mt-20">
                             <Sidenav activeSection={activeSection} onNavItemClick={handleNavItemClick} />
                         </div>
-                        <div className="w-10/12">
+                        <div className="md:w-10/12">
                             <div id="overview" className="section"><OverView /></div>
                             <div id="benefits" className="section"><Benefits /></div>
                             <div id="awards" className="section"><Awards /></div>
