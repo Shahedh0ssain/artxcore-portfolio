@@ -83,7 +83,7 @@ const Navber = () => {
 
 
     return (
-        <header  className={`sticky top-0 right-0 left-0 z-50 ${openItem ? 'overlay' : ''}`}>
+        <header  className={`sticky top-0 right-0 left-0 z-50 ${openItem ? 'overlay ' : ''}`}>
             <div ref={navbarRef} className={` bg-white   border-b`}>
                 <div className={` max-w-screen-2xl mx-auto px-2  md:px-10 lg:px-10 navbar p-0 min-h-3 `}>
 

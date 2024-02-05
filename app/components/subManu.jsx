@@ -1,4 +1,4 @@
-
+'use client'
 
 import React, { useState, useEffect } from 'react';
 
@@ -11,6 +11,7 @@ const SubManu = ({ items, openItem }) => {
 
     useEffect(() => {
         if (openItem) {
+            console.log('openItem:', openItem);
             const firstSubmenuItem = items.find((menuItem) => menuItem.label === openItem)?.submenu?.[0];
             setActiveSubmenuItem(firstSubmenuItem);
             setSubmenuData(firstSubmenuItem?.anothersubmenu || []);
@@ -30,9 +31,9 @@ const SubManu = ({ items, openItem }) => {
     return (
         <>
             {openItem && (
-                <div className='w-full  md:h-[400px] lg:h-[400px]  bg-white drop-shadow-md slow-close-menu  '>
-                    <div className={` max-w-screen-2xl mx-auto px-2  md:px-10 lg:px-10 h-full   flex absolute top-0 left-0 right-0 transition ease-in-out delay-150 duration-1000 ${openItem ? ' transition ease-in-out delay-150 ' : 'submenu-close'} `}>
-                        <div className="w-1/4 h-full  border-e">
+                <div className='w-full  md:h-[400px] lg:h-[400px]  bg-white drop-shadow-md transition-all ease-in-out duration-500    '>
+                    <div className={`max-w-screen-2xl mx-auto px-2  md:px-10 lg:px-10 h-full   flex absolute top-0 left-0 right-0   `}>
+                        <div className="w-1/4 h-full  border-e transition-all">
                             <ul className=" menu   pb-5 ">
                                 {items.find((menuItem) => menuItem.label === openItem)?.submenu?.map((submenuItem, index) => (
                                     <li
@@ -44,7 +45,7 @@ const SubManu = ({ items, openItem }) => {
                                 ))}
                             </ul>
                         </div>
-                        <div className=" w-3/4 h-full">
+                        <div className=" w-3/4 h-full transition-all ">
                             {/* Display selected anothersubmenu */}
                             {activeSubmenuItem && (
                                 <div className="p-5">
