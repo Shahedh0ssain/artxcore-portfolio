@@ -27,50 +27,74 @@
 }
 
 
-.sidenav-item {
-    cursor: pointer;
-    padding: 10px;
-    transition: background-color 0.3s;
+
+
+
+
+
+
+
+
+
+
+/* 
+.submenu-container {
+    transition: height 0.5s;
 }
 
-.sidenav-item.active {
-    background-color: green;
-    /* Set your desired active color */
-    color: white;
-    /* Set text color for better visibility */
+.submenu-list-item {
+    transition: background-color 0.5s;
+} */
+/* .submenu-container {
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform 10s ease-in-out;
+    overflow: hidden;
+}
+
+.submenu-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.submenu-list-item {
+    transition: background-color 10s ease-in-out;
+} */
+
+/* */
+.ZZ {
+    z-index: -1;
+}
+
+.open-animation {
+    animation: slideIn 0.3s ease-in-out;
+
+}
+
+.close-animation {
+    animation: slideUp 0.5s ease-in-out;
 }
 
 
 
-.slow-close-menu {
-    transition: height 0.5s ease, opacity 0.5s ease;
-    /* Adjust the duration and easing function as needed */
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
 }
 
-.menu-container {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+    }
 
-.menu-container.open {
-    opacity: 1;
-    visibility: visible;
-}
-
-
-.submenu-open {
-    opacity: 1;
-    transition: opacity 10s ease-in-out;
-    background-color: rebeccapurple;
-    /* Add any other transition properties you need */
-}
-
-.submenu-close {
-    opacity: 0;
-    pointer-events: none;
-    /* Disable pointer events during the transition */
-    transition: opacity 0.5s ease-in-out;
-    /* Add any other transition properties you need */
-    background-color: aqua;
+    to {
+        transform: translateY(-50%);
+    }
 }

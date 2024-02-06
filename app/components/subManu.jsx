@@ -31,15 +31,18 @@ const SubManu = ({ items, openItem }) => {
     return (
         <>
             {openItem && (
-                <div className='w-full  md:h-[400px] lg:h-[400px]  bg-white drop-shadow-md transition-all ease-in-out duration-500    '>
+                <div className={`w-full  md:h-[400px] lg:h-[400px]  bg-white drop-shadow-md ZZ  ${openItem ? 'open-animation' : 'close-animation'}`}>
                     <div className={`max-w-screen-2xl mx-auto px-2  md:px-10 lg:px-10 h-full   flex absolute top-0 left-0 right-0   `}>
-                        <div className="w-1/4 h-full  border-e transition-all">
+                        <div className="w-1/4 h-full  border-e ">
                             <ul className=" menu   pb-5 ">
                                 {items.find((menuItem) => menuItem.label === openItem)?.submenu?.map((submenuItem, index) => (
                                     <li
                                         key={index}
                                         onClick={() => handleSubItemClick(submenuItem)}
-                                        className={`my-1 text-black hover:bg-[#EBEBEB]  ${activeSubmenuItem === submenuItem ? 'bg-gray-200 border-2 border-indigo-600' : ''}`}>
+                                        className={`my-1 text-black hover:bg-[#EBEBEB] ${activeSubmenuItem === submenuItem ? 'bg-gray-200 border-2 border-indigo-600 ' : ''}`}
+
+                                    // className={`my-1 text-black hover:bg-[#EBEBEB]  ${activeSubmenuItem === submenuItem ? 'bg-gray-200 border-2 border-indigo-600' : ''}`}
+                                    >
                                         <a>{submenuItem.label}</a>
                                     </li>
                                 ))}
