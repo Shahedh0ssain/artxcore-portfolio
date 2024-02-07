@@ -104,3 +104,8 @@
         transform: translateY(0);
     }
 }
+
+
+.leftMobileNav {
+    left: -8px;
+}

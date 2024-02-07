@@ -19,20 +19,34 @@ const Navber = () => {
 
 
     useEffect(() => {
+
         const handleOutsideClick = (event) => {
             console.log('Clicked outside the navbar');
+            // console.log("handleOutsideClick", openItem)
             if (navbarRef.current && !navbarRef.current.contains(event.target)) {
                 console.log('Inside if condition');
                 setOpenItem(null);
-                setIsDrawerOpen(false);
             }
+
         };
 
+        // if (openItem) {
+        //     console.log("handleOutsideClick")
+        //     document.addEventListener('click', handleOutsideClick);
+
+        // }
         document.addEventListener('click', handleOutsideClick);
 
+
         return () => {
+            // if (openItem) {
+            //     console.log("handleOutsideClick")
+            //     document.removeEventListener('click', handleOutsideClick);
+
+            // }
             document.removeEventListener('click', handleOutsideClick);
         };
+
     }, []);
 
     // useEffect(() => {
@@ -77,6 +91,7 @@ const Navber = () => {
 
 
     const handleToggleDrawer = () => {
+        console.log("call")
         setIsDrawerOpen(!isDrawerOpen);
     };
 
@@ -110,15 +125,8 @@ const Navber = () => {
                                 }
                             </div>
                             {isDrawerOpen && (
-                                <ul tabindex="0" class="menu menu-sm md:hidden absolute left-0 right-0 top-6 mt-3 z-[1] p-2 shadow bg-white  w-screen h-screen">
-                                    {/* {items.map((menuItem, index) => (
-                    <ListItem
-                        key={index}
-                        item={menuItem}
-                        isOpen={openItem === menuItem.label}
-                        onItemClick={handleItemClick}
-                    />
-                ))} */}
+                                <ul tabindex="0" class="menu menu-sm md:hidden absolute leftMobileNav right-0 top-6 mt-3 z-[1] p-2 shadow bg-white  w-screen h-screen">
+
 
                                     <MobileMenu items={items}></MobileMenu>
 
@@ -170,6 +178,12 @@ const Navber = () => {
                     </div>
 
                 </div>
+
+
+            </div>
+
+            {/* mobile manu option */}
+            <div>
                 <SubManu items={items} openItem={openItem}></SubManu>
 
             </div>

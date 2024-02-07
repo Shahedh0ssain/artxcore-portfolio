@@ -6,7 +6,7 @@ const SubManu = ({ items, openItem }) => {
 
     const [activeSubmenuItem, setActiveSubmenuItem] = useState(null);
     const [submenuData, setSubmenuData] = useState([]); // New state to hold submenu data
-    const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+    // const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
 
     useEffect(() => {
