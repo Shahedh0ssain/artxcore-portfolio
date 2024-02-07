@@ -7,8 +7,6 @@ import Awards from "../components/AnotherPage/awards";
 import Banks from "../components/AnotherPage/banks";
 import Sidenav from "../components/AnotherPage/sideNav";
 import { useEffect, useState } from "react";
-import MobileMenu from "../components/mobileManu";
-import MobileManu from "../components/AnotherPage/MobileManu";
 
 
 const anotherPage = () => {
