@@ -32,7 +32,7 @@ const Hero = () => {
                         </p>
 
                         <div className="md:flex md:px-3 md:my-3 ">
-                            <button className="w-full px-3 h-[50px]  mb-2  md:mb-0 md:w-64 md:h-[50px] md:me-5 flex items-center justify-between  rounded-sm bg-[#0F62FE] text-white ">
+                            <button className="w-full px-3 h-[50px]  mb-2  md:mb-0 md:w-64 md:h-[50px] md:me-5 flex items-center justify-between  rounded-sm bg-gray-900 text-white ">
                                 <span>Try for Free</span>
                                 <Image
                                     width={25}

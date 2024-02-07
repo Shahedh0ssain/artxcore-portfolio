@@ -110,7 +110,7 @@ const Navber = () => {
                                 }
                             </div>
                             {isDrawerOpen && (
-                                <ul tabindex="0" class="menu menu-sm md:hidden absolute top-6 mt-3 z-[1] p-2 shadow bg-white  w-screen h-screen">
+                                <ul tabindex="0" class="menu menu-sm md:hidden absolute left-0 right-0 top-6 mt-3 z-[1] p-2 shadow bg-white  w-screen h-screen">
                                     {/* {items.map((menuItem, index) => (
                     <ListItem
                         key={index}

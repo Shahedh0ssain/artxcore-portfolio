@@ -52,7 +52,7 @@ const Blog = ({ img }) => {
         // </div>
 
 
-        <div class="card  bg-[#262626] shadow">
+        <div class="card  bg-gray-900 shadow">
             <figure>
                 {/* <Image
                     width={400}

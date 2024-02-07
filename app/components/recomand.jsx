@@ -32,17 +32,17 @@ const Recomand = () => {
                 </div>
             </div>  */}
 
-            <div class="card card-side  bg-[#0F62FE] shadow-xl   py-5">
-          
-                    {/* <img className="ms-3" src="/images1.png" alt="Movie" /> */}
-                    <Image
-                        width={80}
-                        height={50}
-                        // className="w-full h-auto"
-                        className=" m-5 w-[90px] h-[90px] md:w-[100px] md:h-[100px] "
-                        src="/images1.png"
-                        alt=""
-                    />
+            <div class="card card-side  bg-gray-900 shadow-xl   py-5">
+
+                {/* <img className="ms-3" src="/images1.png" alt="Movie" /> */}
+                <Image
+                    width={80}
+                    height={50}
+                    // className="w-full h-auto"
+                    className=" m-5 w-[90px] h-[90px] md:w-[100px] md:h-[100px] "
+                    src="/images1.png"
+                    alt=""
+                />
 
                 <div class="card-body">
                     <h2 class="card-title text-white">Free Trial</h2>

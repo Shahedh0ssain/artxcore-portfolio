@@ -10,13 +10,13 @@ const Registration = () => {
                 <div className="md:flex ">
                     <div className="w-full  px-2 py-10  md:m-6  md:w-2/4 lg:w-3/5 md:py-10 md:flex  md:justify-end ">
                         <div className="md:flex">
-                            {/* <Image
-                                width={400}
-                                height={200}
+                            <Image
+                                width={900}
+                                height={500}
                                 src="/klipartz1.png"
                                 alt="Movie-player"
-                                className="md:me-5" /> */}
-                                
+                                className="md:me-5" />
+
 
                         </div>
                     </div>
@@ -153,7 +153,7 @@ const Registration = () => {
                                             </label> */}
 
                                             <div className="mt-2">
-                                                <a href="#" class="flex items-center justify-center rounded-sm border border-transparent bg-[#0F62FE] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Create Account</a>
+                                                <a href="#" class="flex items-center justify-center rounded-sm border border-transparent bg-gray-900 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Create Account</a>
                                             </div>
 
                                         </div>

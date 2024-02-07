@@ -4,7 +4,7 @@ import Image from "next/image"
 
 function Footer() {
     return (
-        <footer className="bg-[#262626]">
+        <footer className="bg-gray-900">
             <div className="footer max-w-screen-2xl  mx-auto px-2  md:px-5 lg:px-5     text-white py-14">
                 <aside>
                     <Image
