@@ -27,7 +27,18 @@
 }
 
 
+.sidenav-item {
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
 
+.sidenav-item.active {
+    background-color: green;
+    /* Set your desired active color */
+    color: white;
+    /* Set text color for better visibility */
+}
 
 
 
@@ -63,30 +74,14 @@
 } */
 
 /* */
-.ZZ {
-    z-index: -1;
-}
+
 
 .open-animation {
-    animation: slideIn 0.3s ease-in-out;
-
+    animation: slideIn 0.4s ease-in-out;
 }
 
 .close-animation {
     animation: slideUp 0.5s ease-in-out;
-}
-
-
-
-
-@keyframes slideIn {
-    from {
-        transform: translateY(-50%);
-    }
-
-    to {
-        transform: translateY(0);
-    }
 }
 
 @keyframes slideUp {
@@ -96,5 +91,16 @@
 
     to {
         transform: translateY(-50%);
+    }
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translateY(0);
     }
 }
