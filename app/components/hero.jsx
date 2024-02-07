@@ -37,7 +37,7 @@ const Hero = () => {
                                 <Image
                                     width={25}
                                     height={25}
-                                    src="/Right-arrow.png"
+                                    src="/Vector.png"
                                     alt="" />
 
                             </button>

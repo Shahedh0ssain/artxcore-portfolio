@@ -7,6 +7,8 @@ import Awards from "../components/AnotherPage/awards";
 import Banks from "../components/AnotherPage/banks";
 import Sidenav from "../components/AnotherPage/sideNav";
 import { useEffect, useState } from "react";
+import MobileMenu from "../components/mobileManu";
+import MobileManu from "../components/AnotherPage/MobileManu";
 
 
 const anotherPage = () => {
@@ -23,6 +25,31 @@ const anotherPage = () => {
         }
     };
 
+    // useEffect(() => {
+    //     const sectionTargets = document.querySelectorAll('.section');
+    //     const options = {
+    //         rootMargin: '0px',
+    //         threshold: 0.5,
+    //     };
+
+    //     const handleIntersection = (entries) => {
+    //         entries.forEach((entry) => {
+    //             if (entry.isIntersecting) {
+    //                 setActiveSection(entry.target.id);
+    //             }
+    //         });
+    //     };
+
+    //     const observer = new IntersectionObserver(handleIntersection, options);
+
+    //     sectionTargets.forEach((target) => {
+    //         observer.observe(target);
+    //     });
+
+    //     return () => {
+    //         observer.disconnect();
+    //     };
+    // }, []);
 
     useEffect(() => {
         const sectionTargets = document.querySelectorAll('.section'); // Replace with the actual class of your sections
@@ -58,6 +85,7 @@ const anotherPage = () => {
 
                 <Hero></Hero>
                 <div className="relativesss relative">
+                    {/* <MobileManu activeSection={activeSection} onNavItemClick={handleNavItemClick} /> */}
                     <div className="md:flex">
                         <div className="md:w-2/12 md:mt-20">
                             <Sidenav activeSection={activeSection} onNavItemClick={handleNavItemClick} />

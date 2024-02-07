@@ -46,7 +46,11 @@ const Login = () => {
                                                 <div className="mt-2">
                                                     <a href="#" class="flex items-center justify-between rounded-md border border-transparent bg-[#0F62FE] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">
                                                         <span>Continue</span>
-                                                        <Image src="Vector.png" alt="" />
+                                                        <Image
+                                                            width={30}
+                                                            height={20}
+                                                            src="/Vector.png"
+                                                            alt="" />
 
                                                     </a>
 
@@ -81,7 +85,11 @@ const Login = () => {
                                     <div className="mt-2">
                                         <a href="#" class="flex items-center justify-between rounded-md border-2 border-[#0F62FE]	  bg-[#ffff] px-6 py-3 text-base font-medium text-black  shadow-sm">
                                             <span>create an Artixcore </span>
-                                            <Image src="Vector-1.png" alt="" />
+                                            <Image
+                                                width={30}
+                                                height={20}
+                                                src="/Vector-1.png"
+                                                alt="logo" />
 
                                         </a>
 
@@ -100,7 +108,13 @@ const Login = () => {
 
                     <div className="w-full  px-2 py-10  md:m-6  md:w-2/4 lg:w-3/5 md:py-10 md:flex  md:justify-end ">
                         <div className="md:flex">
-                            <Image srcSet="klipartz1.png" alt="Movie-player" className="w-full  md:me-5" />
+                            <Image
+                                width={800}
+                                height={600}
+                                src="/klipartz1.png"
+                                alt="Movie-player"
+                                className="w-full  md:me-5"
+                            />
 
                         </div>
                     </div>
