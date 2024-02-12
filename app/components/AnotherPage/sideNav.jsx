@@ -5,7 +5,7 @@
 
 const Sidenav = ({ activeSection, onNavItemClick }) => {
 
-    console.log("sidevar section",activeSection)
+    console.log("sidevar section", activeSection)
 
     const handleItemClick = (sectionId) => {
         console.log('Clicked:', sectionId);
@@ -21,6 +21,7 @@ const Sidenav = ({ activeSection, onNavItemClick }) => {
                 <li className={`sidenav-item border-l-4 ${activeSection === 'benefits' ? 'border-l-4 border-blue-700' : ''}`} onClick={() => handleItemClick('benefits')}>Benefits</li>
                 <li className={`sidenav-item border-l-4 ${activeSection === 'awards' ? 'border-l-4 border-blue-700' : ''}`} onClick={() => handleItemClick('awards')}>Awards</li>
                 <li className={`sidenav-item border-l-4 ${activeSection === 'banks' ? 'border-l-4 border-blue-700' : ''}`} onClick={() => handleItemClick('banks')}>Banks</li>
+                <li className={`sidenav-item border-l-4 ${activeSection === 'reviews' ? 'border-l-4 border-blue-700' : ''}`} onClick={() => handleItemClick('banks')}>Reviews</li>
             </ul>
 
         </div>

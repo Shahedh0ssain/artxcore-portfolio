@@ -21,8 +21,11 @@ const Hero = () => {
 
 
                     <div className="">
-                        <h1 className="p-3  md:p-4  text-3xl md:inline-block md:text-5xl font-light">
+                        {/* <h1 className="hidden p-3  md:p-4  text-3xl md:inline-block md:text-5xl font-light">
                             Put AI to work with <br /> watsonx
+                        </h1> */}
+                        <h1 className="p-3  md:p-4  text-4xl md:inline-block md:text-5xl font-light">
+                            Put AI to work with watsonx
                         </h1>
                     </div>
 

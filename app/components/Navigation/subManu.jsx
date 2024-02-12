@@ -1,8 +1,9 @@
 'use client'
 
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 
-const SubManu = ({ items, openItem }) => {
+const SubManu = ({  items, openItem, setOpenItem }) => {
 
     const [activeSubmenuItem, setActiveSubmenuItem] = useState(null);
     const [submenuData, setSubmenuData] = useState([]); // New state to hold submenu data
@@ -56,8 +57,9 @@ const SubManu = ({ items, openItem }) => {
                                     {/* Map through the selected submenu items */}
                                     <ul className="menu">
                                         {submenuData.map((item, index) => (
-                                            <li className={`text-black my-1 ${activeSubmenuItem === item ? 'active' : ''}`} key={index}>
-                                                <a>{item.label}</a>
+                                            <li key={index} onClick={() => setOpenItem(null)} className={`text-black my-1 ${activeSubmenuItem === item ? 'active' : ''}`} >
+                                                {/* <a>{item.label}</a> */}
+                                                <Link href={`/anotherPage`}>{item.label}</Link>
                                             </li>
                                         ))}
                                     </ul>

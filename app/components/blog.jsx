@@ -52,7 +52,7 @@ const Blog = ({ img }) => {
         // </div>
 
 
-        <div class="card  bg-gray-900 shadow">
+        <div class="card  m-4 md:m-1  bg-gray-900 shadow">
             <figure>
                 {/* <Image
                     width={400}
@@ -64,7 +64,7 @@ const Blog = ({ img }) => {
                 /> */}
                 <img className="w-full h-auto" src={img} alt="Shoes" />
             </figure>
-            <div class="card-body">
+            <div class="card-body py-10">
                 <h2 class="card-title text-white">
                     MY Title
                 </h2>

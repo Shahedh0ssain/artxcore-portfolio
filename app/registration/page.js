@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 
 const Registration = () => {
@@ -30,7 +31,12 @@ const Registration = () => {
                                 <div className=" ">
                                     <div className="border-b-2">
                                         <h2 className="py-1 text-2xl font-semibold leading-7 text-gray-900 ">Create an Artixcore </h2>
-                                        <p className="py-1 m-1 text-base leading-6 text-gray-600">Already have Artixcore Account? <span className="text-[#0F62FE]">Login</span></p>
+
+                                        <Link href={`/login`}>
+                                            <p className="py-1 m-1 text-base leading-6 text-gray-600">Already have Artixcore Account? <span className="text-[#0F62FE]">Login</span></p>
+
+                                        </Link>
+
 
                                     </div>
 

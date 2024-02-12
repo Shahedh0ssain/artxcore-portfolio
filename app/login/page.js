@@ -18,7 +18,6 @@ const Login = () => {
                                 <div className=" ">
                                     <div className=" mb-2">
                                         <h2 className="text-lg	 font-semibold leading-7 text-gray-900 ">Login to Artixcore</h2>
-
                                     </div>
                                     <div className="divider"></div>
 

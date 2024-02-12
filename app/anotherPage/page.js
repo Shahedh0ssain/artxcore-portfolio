@@ -5,6 +5,7 @@ import OverView from "../components/AnotherPage/overView";
 import Benefits from "../components/AnotherPage/benefits";
 import Awards from "../components/AnotherPage/awards";
 import Banks from "../components/AnotherPage/banks";
+import Reviews from "../components/AnotherPage/Reviews";
 import Sidenav from "../components/AnotherPage/sideNav";
 import { useEffect, useState } from "react";
 
@@ -93,6 +94,7 @@ const anotherPage = () => {
                             <div id="benefits" className="section"><Benefits /></div>
                             <div id="awards" className="section"><Awards /></div>
                             <div id="banks" className="section"><Banks /></div>
+                            <div id="reviews" className="section"><Reviews /></div>
                         </div>
                     </div>
                 </div>

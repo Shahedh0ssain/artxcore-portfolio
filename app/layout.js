@@ -1,8 +1,9 @@
 import './globals.css'
-import Navber from './components/navber'
+import Navber from './components/Navigation/navber'
 import Footer from './components/footer'
 // import { Poppins } from 'next/font/google';
 import { IBM_Plex_Sans } from 'next/font/google';
+import Head from 'next/head';
 
 const ibm = IBM_Plex_Sans({
   subsets: ['latin'],
@@ -12,14 +13,6 @@ const ibm = IBM_Plex_Sans({
 
 })
 
-// const poppins = Poppins({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   variable: '--font-poppins',
-//   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
-// });
-
-// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Artxcore',
@@ -29,6 +22,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="shortcut icon" href="/icon-01.png" />
+      </Head>
       <body className={`${ibm.className}`}>
         <Navber></Navber>
         {children}
